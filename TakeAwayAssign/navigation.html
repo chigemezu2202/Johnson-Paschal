@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Nav Bar Website</title>
+    <link rel="stylesheet" href="RemixIcon_Fonts_v4.3.0/fonts/remixicon.css">
+    <link rel="shortcut icon" href="img/393294-money-ipad-wallpaper-retina.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label class="logo">DesignX</label>
+        <ul>
+            <li><a class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+        <label for="check" class="checkbtn">
+            <i class="ri ri-layout-grid-2-fill"></i>
+        </label>
+    </nav>
+    <section class="background">
+
+    </section>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: montserrat;
+        }
+
+        nav {
+            background: #0082e6;
+            height: 80px;
+            width: 100%;
+            display: flex;
+            position: relative;
+        }
+
+        label.logo {
+            color: white;
+            font-size: 35px;
+            line-height: 80px;
+            padding: 0 100px;
+            font-weight: bold;
+        }
+
+        nav ul li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: uppercase;
+
+        }
+
+        a.active,
+        a:hover {
+            background: #1b9bff;
+            transition: .5s;
+        }
+
+        .checkbtn {
+            font-size: 30px;
+            color: white;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+            position: absolute;
+            top: 0;
+
+        }
+
+        #check {
+            display: none;
+        }
+
+        .background {
+            background-image: url(img/bentley-continental.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: calc(100vh - 80px);
+        }
+        @media (max-width: 952px) {
+            label.logo {
+                font-size: 30px;
+                padding-left: 50px;
+
+            }
+
+            nav ul li a {
+                font-size: 16px;
+
+            }
+        }
+
+        @media (max-width: 858px) {
+            .checkbtn {
+                display: block;
+            }
+
+            ul {
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: #2c3e50;
+                top: 80px;
+                left: 0;
+                text-align: center;
+            }
+
+            nav ul li {
+                display: block;
+            }
+        }
+    </style>
+</body>
+
+</html>
